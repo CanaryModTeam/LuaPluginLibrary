@@ -1,0 +1,2 @@
+lang-name=lua
+lifecycle-class=net.canarymod.plugin.lang.lua.LuaPluginLifecycle
