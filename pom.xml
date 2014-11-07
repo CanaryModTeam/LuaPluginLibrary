@@ -102,14 +102,20 @@
     <dependencies>
         <dependency>
             <groupId>net.canarymod</groupId>
-            <artifactId>scalapluginlib</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <artifactId>CanaryLib</artifactId>
+            <version>1.2.0-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.luaj</groupId>
             <artifactId>luaj-jse</artifactId>
             <version>3.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>2.11.2</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
@@ -176,6 +182,7 @@
                             <artifactSet>
                                 <includes>
                                     <include>org.luaj:luaj-jse</include>
+                                    <include>org.scala-lang:scala-library</include>
                                 </includes>
                             </artifactSet>
                             <shadedArtifactAttached>true</shadedArtifactAttached>
