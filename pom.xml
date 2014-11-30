@@ -63,19 +63,19 @@
     </properties>
 
     <scm>
-        <connection>scm:git:git://github.com/CanaryModTeam/CanaryLuaPluginLib.git</connection>
-        <url>https://github.com/CanaryModTeam/CanaryLuaPluginLib</url>
-        <developerConnection>scm:git:git@github.com:CanaryModTeam/CanaryLuaPluginLib.git</developerConnection>
+        <connection>scm:git:git://github.com/CanaryModTeam/LuaPluginLibrary.git</connection>
+        <url>https://github.com/CanaryModTeam/LuaPluginLibrary</url>
+        <developerConnection>scm:git:git@github.com:CanaryModTeam/LuaPluginLibrary.git</developerConnection>
     </scm>
 
     <issueManagement>
-        <url>https://github.com/CanaryModTeam/CanaryLuaPluginLib/issues</url>
+        <url>https://github.com/CanaryModTeam/LuaPluginLibrary/issues</url>
         <system>GitHub</system>
     </issueManagement>
 
     <ciManagement>
         <system>Jenkins</system>
-        <url>http://ci.visualillusionsent.net/job/CanaryLuaPluginLib/</url>
+        <url>http://ci.visualillusionsent.net/job/LuaPluginLibrary/</url>
     </ciManagement>
 
     <distributionManagement>
@@ -186,6 +186,7 @@
                                 </includes>
                             </artifactSet>
                             <shadedArtifactAttached>true</shadedArtifactAttached>
+                            <finalName>${project.name}-${project.version}${build.number}-independent</finalName>
                         </configuration>
                     </execution>
                 </executions>
@@ -255,14 +256,6 @@
                                 <link>http://docs.visualillusionsent.net/VIUtils/1.4.0/</link>
                                 <link>http://www.jdom.org/docs/apidocs/</link>
                             </links>
-                            <tags>
-                                <!-- Cause damagefilter uses @tags that don't exist... We need to make them exist -->
-                                <tag>
-                                    <name>PluginDev</name>
-                                    <placement>a</placement>
-                                    <head>PluginDev:</head>
-                                </tag>
-                            </tags>
                         </configuration>
                         <executions>
                             <execution>
